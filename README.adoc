@@ -76,10 +76,10 @@ Running this workflow creates an artifact that is reported to the CloudBees Plat
 name: GHA Workflow
 
 on:
-    workflow_dispatch:
+  - workflow_dispatch
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
