@@ -1,12 +1,12 @@
-name: 'Register deployed artifacts in Platform'
-description: 'Report deployment data and artifact information to the CloudBees platform.'
+name: 'Register deployed artifacts in CloudBees Platform'
+description: 'Report data about artifacts deployed into a specific environment by a GHA workflow run to the CloudBees Platform'
 branding:
   icon: 'command'
   color: 'purple'
 
 inputs:
   cloudbees-url:
-    description: 'The CloudBees platform URL.'
+    description: 'The CloudBees Platform URL.'
     required: false
     default: "https://api.cloudbees.io"  
   target-environment:

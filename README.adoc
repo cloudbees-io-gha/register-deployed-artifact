@@ -4,7 +4,7 @@ To learn more about working with artifacts in CloudBees Platform, refer to the d
 
 == Prerequisites
 
-Set up the CloudBees platform and GitHub Actions to work together, providing key features of the platform to GitHub Actions workflows.
+Set up the CloudBees Platform and GitHub Actions to work together, providing key features of the CloudBees Platform to GitHub Actions workflows.
 Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/gha-getting-started[Getting started with GitHub Actions integration] for more information.
 
 == Inputs
@@ -19,7 +19,7 @@ Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-a
 | cloudbees-url
 | string
 | false
-| URL of the CloudBees platform API. Defaults to `https://api.cloudbees.io`.
+| URL of the CloudBees Platform API. Defaults to `https://api.cloudbees.io`.
 
 | target-environment
 | string
@@ -65,7 +65,7 @@ This action produces no output
 
 === Full workflow and run example
 
-Running this workflow creates an artifact that is reported to the platform, then that artifact is deployed.
+Running this workflow creates an artifact that is reported to the CloudBees Platform, then that artifact is deployed.
 
 .Example GitHub Actions workflow YAML file
 [.collapsible]
@@ -94,7 +94,7 @@ jobs:
       - name: Push binary
         run: echo "Pushing Binary to ECR..."
 
-      - name: Register Build Artifacts in Cloudbees Platform
+      - name: Register Build Artifacts in CloudBees Platform
         uses: cloudbees-io-gha/register-build-artifact@v3
         id: go-action
         with:
@@ -117,4 +117,4 @@ jobs:
 ----
 --
 
-After the run has completed, the artifact information is displayed in the *Deployed artifacts* tab of *Run details* in the platform.
+After the run has completed, the artifact information is displayed in the *Deployed artifacts* tab of *Run details* in the CloudBees Platform.
