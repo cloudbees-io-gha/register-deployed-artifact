@@ -1,11 +1,11 @@
 # register-deployed-artifact
-Use this GitHub Action (GHA) for artifact traceability: Inform the CloudBees platform that an artifact version has been deployed.
-To learn more about working with artifacts in the platform, refer to the deployed artifacts documentation.
+Use this GitHub Action (GHA) for artifact traceability: inform the CloudBees platform that an artifact version has been deployed.
+To learn more about working with artifacts in CloudBees Platform, refer to the deployed artifacts documentation.
 
 == Prerequisites
 
-Set up the CloudBees platform and GHA to work together, providing key features of the platform to GHA workflows.
-Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/gha-getting-started[Getting started with GHA integration] for more information.
+Set up the CloudBees platform and GitHub Actions to work together, providing key features of the platform to GitHub Actions workflows.
+Refer to link:https://docs.cloudbees.com/docs/cloudbees-platform/latest/github-actions/gha-getting-started[Getting started with GitHub Actions integration] for more information.
 
 == Inputs
 [cols="22%a,15%a,15%a,48%a",options="header"]
@@ -67,7 +67,7 @@ This action produces no output
 
 Running this workflow creates an artifact that is reported to the platform, then that artifact is deployed.
 
-.Example GHA workflow YAML file
+.Example GitHub Actions workflow YAML file
 [.collapsible]
 --
 
