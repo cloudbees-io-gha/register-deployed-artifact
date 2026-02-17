@@ -1,0 +1,33 @@
+name: 'Register deployed artifacts in CloudBees Platform'
+description: 'Report data about artifacts deployed into a specific environment by a GHA workflow run to the CloudBees Platform'
+branding:
+  icon: 'command'
+  color: 'purple'
+
+inputs:
+  cloudbees-url:
+    description: 'The CloudBees Platform URL.'
+    required: false
+    default: "https://api.cloudbees.io"  
+  target-environment:
+    description: 'The target environment where the artifact was deployed (e.g., production, staging, dev).'
+    required: true
+  labels:
+    description: 'The list of labels for the deployment.'
+    required: false
+  artifact-id:
+    description: 'The ID of the artifact being deployed. Required when artifact-url is not provided.'
+    required: false
+  artifact-url:
+    description: 'The URL of the artifact being deployed. Required when artifact-id is not provided.'
+    required: false
+  
+runs:
+  using: "docker"
+  image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-register-deployed-artifact:main-21ff62f64e2c10767908b65f11a496c4f9a78891"
+  env:
+    CLOUDBEES_API_URL: ${{ inputs.cloudbees-url }}    
+    TARGET_ENVIRONMENT: ${{ inputs.target-environment }}
+    DEPLOYMENT_LABELS: ${{ inputs.labels }}
+    ARTIFACT_ID: ${{ inputs.artifact-id }}
+    ARTIFACT_URL: ${{ inputs.artifact-url }}    
