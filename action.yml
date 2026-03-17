@@ -1,12 +1,12 @@
 name: 'Register deployed artifacts in CloudBees Unify'
-description: 'Report data about artifacts deployed into a specific environment by a GHA workflow run to the CloudBees Unify'
+description: 'Report data about artifacts deployed into a specific environment by a GHA workflow run to CloudBees Unify'
 branding:
   icon: 'command'
   color: 'purple'
 
 inputs:
   cloudbees-url:
-    description: 'The CloudBees Unify URL.'
+    description: 'CloudBees Unify URL.'
     required: false
     default: "https://api.cloudbees.io"  
   target-environment:
