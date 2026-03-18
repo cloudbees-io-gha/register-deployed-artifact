@@ -6,7 +6,7 @@ branding:
 
 inputs:
   cloudbees-url:
-    description: 'CloudBees Unify URL.'
+    description: 'URL of CloudBees Unify API.'
     required: false
     default: "https://api.cloudbees.io"  
   target-environment:
