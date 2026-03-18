@@ -1,5 +1,5 @@
 name: 'Register deployed artifacts in CloudBees Unify'
-description: 'Report data about artifacts deployed into a specific environment by a GHA workflow run to CloudBees Unify'
+description: 'Register artifact deployments to specific environments in CloudBees Unify'
 branding:
   icon: 'command'
   color: 'purple'
