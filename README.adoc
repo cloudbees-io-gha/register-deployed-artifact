@@ -65,7 +65,7 @@ This action produces no output
 
 === Full workflow and run example
 
-Running this workflow creates an artifact that is reported to CloudBees Unify, then that artifact is deployed.
+Running this workflow creates an artifact that is reported to CloudBees Unify, and then that artifact is deployed.
 
 .Example GitHub Actions workflow YAML file
 [.collapsible]
