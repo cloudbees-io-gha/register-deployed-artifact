@@ -117,4 +117,4 @@ jobs:
 ----
 --
 
-After the run has completed, the artifact information is displayed in the *Deployed artifacts* tab of *Run details* in CloudBees Unify.
+After the run completes, CloudBees Unify displays the artifact information on the *Deployments* tab on the *Run details* page.
