@@ -24,7 +24,7 @@ inputs:
   
 runs:
   using: "docker"
-  image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-register-deployed-artifact:main-21ff62f64e2c10767908b65f11a496c4f9a78891"
+  image: "docker://public.ecr.aws/l7o7z1g8/actions/gha-register-deployed-artifact:main-8d819ee6c37734d240bc3e399c7515d85aa14f76"
   env:
     CLOUDBEES_API_URL: ${{ inputs.cloudbees-url }}    
     TARGET_ENVIRONMENT: ${{ inputs.target-environment }}
