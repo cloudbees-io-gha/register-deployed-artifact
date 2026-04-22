@@ -1,6 +1,7 @@
-# register-deployed-artifact
-Use this GitHub Action (GHA) for artifact traceability: inform CloudBees Unify that an artifact version has been deployed.
-To learn more about working with artifacts in CloudBees Unify, refer to the deployed artifacts documentation.
+= GitHub Action: Register a deployed artifact in CloudBees Unify
+
+Use this GitHub Action (GHA) for deployment traceability: inform CloudBees Unify that an artifact version has been deployed to an environment.
+This enables DORA metrics, environment inventory tracking, and deployment analytics for artifacts deployed through GHA workflows.
 
 == Prerequisites
 

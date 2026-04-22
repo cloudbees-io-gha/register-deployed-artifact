@@ -1,4 +1,4 @@
-name: 'Register deployed artifacts in CloudBees Unify'
+name: 'Register deployed artifacts in Unify'
 description: 'Register artifact deployments to specific environments in CloudBees Unify'
 branding:
   icon: 'command'
